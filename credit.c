@@ -85,8 +85,10 @@ bool verify_card_checksum(long card_number)
     //Get the checksum
     while (card_number >  0)
     {
+        //odd digits
         check_sum += card_number % 10;
         card_number /= 10;
+        //even digits
         if ((card_number % 10) < 5)
         {
             check_sum += (card_number % 10) * 2;
