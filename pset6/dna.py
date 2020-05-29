@@ -24,7 +24,7 @@ for i in database:
 for i in database_keys:
     database_keys[i] = 0
 
-# search the string for 0x, then 1x, then 3x etc of each STR then recorn how many were successfully found
+# search the string for 0x, then 1x, then 2x etc of each STR then record how many were successfully found
 for key in database_keys:
     repetition = 0
     while (key * repetition in sequence):
