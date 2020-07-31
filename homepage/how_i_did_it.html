@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Cool Stuff</title>
+    </head>
+    <body>
+        <!-- Menu Bar -->
+        <div class="menu">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Vacation Diary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="how_i_did_it.html">How I Did It</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="random_stuff.html">Random Stuff</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fourth_required_html_page.html">4th Required HTML Page</a>
+              </li>
+            </ul>
+        </div>
+            <!-- jumbotron give the appearance i desire -->
+            <div class="jumbotron">
+            <h1 class="display-4">How I made the interactive map.</h1>
+            <p class="lead">How I made it, what I found, and issues.</p>
+            <hr class="my-4">
+            <p>I wanted to create a simple map with clickable icons on locations I've been that would bring up pictures and a description of the location.</p>
+            <p>I found and based it on <a href="https://developers.google.com/maps/solutions/store-locator/simple-store-locator">Google's Simple Store Locator</a>. I removed everything that didnt break what features I needed to remove extra code, and help me understand what was there.</p>
+            <p>I was able to determine that the popup window is controlled by the following code:</p>
+            <!-- embeds the image in a shadow box -->
+            <div class="shadow p-3 mb-5 bg-white rounded"><img src="img/code.jpg" class="img-fluid" alt="Responsive image"></div>
+            <p>From there I edited the .JSON file to add the new data fields for each item, as well as adding all the locations. I chose 3 images from the 5 locations, and added them to my img folder. With that I was able to add <a href="https://getbootstrap.com/docs/4.5/components/carousel/#with-captions">Bootstraps's image carousel with captions</a> to display the images as I desired. I had to be sure to enable Bootstrap's Javascript to enable the image scrolling.</p>
+            <p>Then lastly I added a menu bar to allow the user to access all 4 pages as requred!</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
